@@ -33,7 +33,7 @@ spec:
       - name: git-url
         value: https://github.com/psturc-org/devfile-sample-hello-world
       - name: output-image
-        value: quay.io/psturc/test-images:test-kcp-$(tt.params.git-revision)
+        value: quay.io/psturc/test-images@sha256:0c32917f44de60419b574098fcb5df5777cd85797976efa27466f7197a5eb498-$(tt.params.git-revision)
       - name: dockerfile
         value: docker/Dockerfile
       - name: path-context
